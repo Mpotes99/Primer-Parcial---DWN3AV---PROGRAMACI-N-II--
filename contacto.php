@@ -57,7 +57,7 @@
 <body>
     <h1>Ponete en contacto</h1>
 
-    <form action="#" method="POST">
+    <form action="datos_post.php" method="POST">
         <div>
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" id="nombre" required>
