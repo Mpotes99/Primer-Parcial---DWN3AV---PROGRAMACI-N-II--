@@ -68,15 +68,15 @@
         </div>
         <div>
             <label for="nombre">Email:</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <input type="email" name="correo" id="correo" required>
         </div>
         <div>
             <label for="nombre">Telefono:</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <input type="tel" name="telefono" id="telefono" required>
         </div>
         <div>
-            <label for="pass">Mensaje:</label>
-            <input type="password" name="pass" id="pass" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
         </div>
         <button type="submit">Enviar</button>
     </form>
