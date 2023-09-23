@@ -56,7 +56,7 @@
     </nav>
 <body>
     <h1>Ponete en contacto</h1>
-
+    <img src="img/banner2.jpg" alt="banner contacto">
     <form action="datos_post.php" method="POST">
         <div>
             <label for="nombre">Nombre:</label>
