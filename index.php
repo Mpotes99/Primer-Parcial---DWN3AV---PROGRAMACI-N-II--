@@ -6,9 +6,10 @@
     <title>Tu Tienda Stanley</title>
     <!-- Enlaza los archivos CSS de Bootstrap y tu propio CSS personalizado -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
     <?php
     include('header.php');
