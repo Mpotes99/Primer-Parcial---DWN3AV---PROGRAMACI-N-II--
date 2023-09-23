@@ -82,11 +82,13 @@ if (!array_key_exists($seccion, $secciones_validas)) {
           <a class="nav-link" href="#">Info Envíos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
+          <a class="nav-link" href="contacto.php">Contacto</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+
 </body>
 </html>
