@@ -63,20 +63,20 @@
             <input type="text" name="nombre" id="nombre" required>
         </div>
         <div>
-            <label for="nombre">Apellido:</label>
-            <input type="text" name="nombre" id="nombre" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
         </div>
         <div>
-            <label for="nombre">Email:</label>
+            <label for="email">Email:</label>
             <input type="email" name="correo" id="correo" required>
         </div>
         <div>
-            <label for="nombre">Telefono:</label>
+            <label for="telefono">Telefono:</label>
             <input type="tel" name="telefono" id="telefono" required>
         </div>
         <div>
             <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="10" required style="resize: none;"></textarea>
         </div>
         <button type="submit">Enviar</button>
     </form>
