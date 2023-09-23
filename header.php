@@ -30,6 +30,4 @@ $sections = array(
             </ul>
         </div>
     </div>
-    
-    
 </nav>

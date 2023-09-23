@@ -1,0 +1,136 @@
+[
+    {
+        "id": 1,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 2,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 3,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 4,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },    {
+        "id": 5,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 6,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 7,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 8,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 9,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 10,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 11,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 12,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 13,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 14,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    },
+    {
+        "id": 15,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imágen": "../img/adventure739ml.webp",
+        "precio": 45.0000
+    }
+]
