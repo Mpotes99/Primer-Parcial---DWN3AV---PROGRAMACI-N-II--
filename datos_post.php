@@ -10,7 +10,7 @@ echo "</pre>";
 
 $nombre = $datos['nombre'];
 $apellido = $datos['apellido'];
-$email = $datos['correo'];
+$correo = $datos['correo'];
 $telefono = $datos['telefono'];
 $mensaje = $datos['mensaje'];
 
