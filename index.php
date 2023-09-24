@@ -26,6 +26,9 @@ $secciones_validas = [
     ],
     "infoenvios" => [
       "titulo" => "Info Envíos"
+    ],
+    "faqs" => [
+      "titulo" => "Preguntas Frecuentes"
   ]
 ];
 
@@ -75,7 +78,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="index.php?sec=faqs">FAQ</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=infoenvios">Info Envíos</a>
