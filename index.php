@@ -1,9 +1,9 @@
 <?PHP
-// require_once "classes/Comic.php";
+require_once "datos/productos.php";
 
 $secciones_validas = [
     "home" => [
-        "titulo" => "Stanley"
+        "titulo" => "Inicio"
     ],
     "productos" => [
         "titulo" => "Productos"
@@ -20,7 +20,10 @@ $secciones_validas = [
     ],
     "mugs" => [
         "titulo" => "Mugs"
-    ]
+    ],
+    "contacto" => [
+      "titulo" => "Contacto"
+  ]
 ];
 
 $seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
@@ -39,7 +42,9 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda Stanley v2</title>
+    <title>Stanley:
+        <?= $titulo ?>
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -82,20 +87,24 @@ if (!array_key_exists($seccion, $secciones_validas)) {
           <a class="nav-link" href="#">Info Envíos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto.php">Contacto</a>
+          <a class="nav-link" href="index.php?sec=contacto">Contacto</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
+
 <main class="container">
-        <?PHP
-
+    <?php
+    if (file_exists("views/$vista.php")) {
         require_once "views/$vista.php";
-
-        ?>
-    </main>
+    } else {
+        // Manejar el caso en el que la vista no existe (por ejemplo, mostrar un mensaje de error o una vista predeterminada).
+        echo "La vista solicitada no existe.";
+    }
+    ?>
+</main>
 
 
 </body>
