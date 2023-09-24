@@ -1,5 +1,5 @@
 <?PHP
-require_once "datos/productos.php";
+require_once "./datos/producto.php";
 
 $secciones_validas = [
     "home" => [
@@ -9,7 +9,7 @@ $secciones_validas = [
         "titulo" => "Ver todos"
     ],
 
-    "termos" => [
+    "termo" => [
         "titulo" => "Termos"
     ],
     "mates" => [
@@ -69,7 +69,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             Productos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Termos</a>
+            <a class="dropdown-item" href="index.php?sec=termo">Termos</a>
             <a class="dropdown-item" href="#">Mates</a>
             <a class="dropdown-item" href="#">Vasos</a>
             <a class="dropdown-item" href="#">Mugs</a>

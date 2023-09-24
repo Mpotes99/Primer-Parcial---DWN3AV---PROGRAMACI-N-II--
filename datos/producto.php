@@ -20,7 +20,6 @@ class Producto
         $this->precio = $precio;
     }
 
-    // Getters para acceder a los atributos privados
     public function getId()
     {
         return $this->id;
@@ -57,34 +56,4 @@ class Producto
     }
 }
 
-class CatalogoProductos
-{
-    private $productos = [];
-
-    public function __construct($jsonPath)
-    {
-        $json = file_get_contents($jsonPath);
-        $data = json_decode($json, true);
-
-        if (is_array($data)) {
-            foreach ($data as $item) {
-                $producto = new Producto(
-                    $item['id'],
-                    $item['modelo'],
-                    $item['color'],
-                    $item['tipo'],
-                    $item['capacidad'],
-                    $item['imagen'],
-                    $item['precio']
-                );
-                $this->productos[] = $producto;
-            }
-        }
-    }
-
-    public function getCatalogo()
-    {
-        return $this->productos;
-    }
-}
 ?>

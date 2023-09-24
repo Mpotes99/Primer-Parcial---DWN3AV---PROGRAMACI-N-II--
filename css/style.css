@@ -30,8 +30,8 @@
     transform: translate(-50%, -50%);
 }
 .custom-button {
-    width: auto; /* Ancho automático según el contenido */
-    padding: 10px 20px; /* Ajusta el espaciado interno del botón según tu preferencia */
+    width: auto; 
+    padding: 10px 20px;
 }
 
 h1{
