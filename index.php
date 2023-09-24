@@ -19,7 +19,7 @@ $secciones_validas = [
         "titulo" => "Vasos"
     ],
     "mugs" => [
-        "titulo" => ""
+        "titulo" => "Mugs"
     ]
 ];
 
@@ -56,7 +56,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#"><img src="./img/stanley-logo.png" alt="logo" class="logo"></a>
+    <a class="navbar-brand" href="index.php?sec=home"><img src="./img/stanley-logo.png" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -72,7 +72,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             <a class="dropdown-item" href="#">Vasos</a>
             <a class="dropdown-item" href="#">Mugs</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Ver todos los productos</a>
+            <a class="dropdown-item" href="index.php?sec=productos&per=todos">Ver todos los productos</a>
           </div>
         </li>
         <li class="nav-item">
@@ -88,6 +88,14 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     </div>
   </div>
 </nav>
+
+<main class="container">
+        <?PHP
+
+        require_once "views/$vista.php";
+
+        ?>
+    </main>
 
 
 </body>
