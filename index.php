@@ -5,8 +5,8 @@ $secciones_validas = [
     "home" => [
         "titulo" => "Inicio"
     ],
-    "productos" => [
-        "titulo" => "Productos"
+    "vertodos" => [
+        "titulo" => "Ver todos"
     ],
 
     "termos" => [
@@ -23,6 +23,9 @@ $secciones_validas = [
     ],
     "contacto" => [
       "titulo" => "Contacto"
+    ],
+    "infoenvios" => [
+      "titulo" => "Info Envíos"
   ]
 ];
 
@@ -46,20 +49,11 @@ if (!array_key_exists($seccion, $secciones_validas)) {
         <?= $titulo ?>
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="alert alert-dark custom-alert" role="alert">
-    ENVÍO GRATIS desde $25.000. LLEGA HOY 🚚 [CABA/GBA] comprando hasta las 12PM
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
   <div class="container">
     <a class="navbar-brand" href="index.php?sec=home"><img src="./img/stanley-logo.png" alt="logo" class="logo"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -77,14 +71,14 @@ if (!array_key_exists($seccion, $secciones_validas)) {
             <a class="dropdown-item" href="#">Vasos</a>
             <a class="dropdown-item" href="#">Mugs</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="index.php?sec=productos&per=todos">Ver todos los productos</a>
+            <a class="dropdown-item" href="index.php?sec=vertodos">Ver todos los productos</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Info Envíos</a>
+          <a class="nav-link" href="index.php?sec=infoenvios">Info Envíos</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=contacto">Contacto</a>
@@ -95,7 +89,8 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 </nav>
 
 
-<main class="container">
+
+<main class="mt-5 py-3">
     <?php
     if (file_exists("views/$vista.php")) {
         require_once "views/$vista.php";
@@ -106,6 +101,6 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     ?>
 </main>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

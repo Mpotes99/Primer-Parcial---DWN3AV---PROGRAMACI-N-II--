@@ -1,0 +1,40 @@
+.logo{
+    max-width: 120px;
+}
+
+.logo1{
+    max-width: 400px;
+}
+.custom-alert {
+    background-color:#212121;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+.cover-banner {
+    position: relative;
+    height: 100vh;
+    background: url('imagen-stanley.jpg') center center no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.custom-button {
+    width: auto; /* Ancho automático según el contenido */
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón según tu preferencia */
+}
+
+h1{
+    font-size: 4rem;
+}
+

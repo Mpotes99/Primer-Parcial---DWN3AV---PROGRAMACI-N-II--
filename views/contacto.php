@@ -1,27 +1,27 @@
-<h1>Ponete en contacto</h1>
-    <img src="img/banner3.webp" alt="banner contacto">
+<div class="container mt-5">
+    <h1 class="text-center">Ponete en contacto</h1>
+    <img src="img/banner3.webp" alt="banner contacto" class="img-fluid mt-3 mb-4">
     <form action="datos_post.php" method="POST">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required>
         </div>
-        <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" required>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido:</label>
+            <input type="text" class="form-control" name="apellido" id="apellido" required>
         </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" name="correo" id="correo" required>
+        <div class="mb-3">
+            <label for="correo" class="form-label">Email:</label>
+            <input type="email" class="form-control" name="correo" id="correo" required>
         </div>
-        <div>
-            <label for="telefono">Telefono:</label>
-            <input type="tel" name="telefono" id="telefono" required>
+        <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono:</label>
+            <input type="tel" class="form-control" name="telefono" id="telefono" required>
         </div>
-        <div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="10" required style="resize: none;"></textarea>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="10" required></textarea>
         </div>
-        <button type="submit">Enviar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
-</html>
-
+</div>
