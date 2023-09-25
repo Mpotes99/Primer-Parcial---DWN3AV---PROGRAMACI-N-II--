@@ -1,4 +1,4 @@
-<header class="bg-primary text-white text-center py-5">
+<header class="bg-dark text-white text-center py-5">
         <h1>Preguntas Frecuentes</h1>
     </header>
 
@@ -6,7 +6,7 @@
         <div class="accordion" id="faqAccordion">
             <!-- Pregunta 1 -->
             <div class="card">
-                <div class="card-header" id="heading1">
+                <div class="card-header " id="heading1">
                     <h2 class="mb-0">
                         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                             ¿Cómo hago un pedido?
@@ -42,7 +42,7 @@
                 <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#faqAccordion">
                     <div class="card-body">
                         Aceptamos las siguientes opciones de pago:
-                        <ul>
+                        <ul></ul>
                             <li>Tarjeta de crédito (Visa, MasterCard, American Express)</li>
                             <li>Pago en efectivo (al momento de la entrega)</li>
                             <li>Transferencia bancaria</li>
@@ -52,8 +52,3 @@
             </div>
         </div>
     </div>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

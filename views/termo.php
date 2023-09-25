@@ -1,21 +1,3 @@
-<?php
-require_once "./datos/producto.php";
-var_dump($productos);
-
-
-$productosFiltrados = [];
-
-if (isset($_GET['per'])) {
-    $tipoFiltro = $_GET['per'];
-
-    // Filtra los productos por tipo
-    foreach ($productos as $producto) {
-        if ($producto->getTipo() == $tipoFiltro) {
-            $productosFiltrados[] = $producto;
-        }
-    }
-}
-?>
 
 <div class="container mt-5">
         <h1>Productos Termo</h1>

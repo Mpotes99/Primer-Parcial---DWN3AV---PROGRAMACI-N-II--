@@ -1,4 +1,3 @@
-
 <div class="container">
     <h1>Todos los Productos</h1>
     <div class="row">
@@ -11,6 +10,8 @@
                         <p class="card-text">Tipo: <?= $producto->getTipo() ?></p>
                         <p class="card-text">Capacidad: <?= $producto->getCapacidad() ?></p>
                         <p class="card-text">Precio: $<?= number_format($producto->getPrecio(), 2) ?></p>
+                        <!-- Agregar botón "Agregar al carrito" -->
+                        <button class="btn btn-dark">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
