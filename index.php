@@ -41,6 +41,10 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     $vista = $seccion;
     $titulo = $secciones_validas[$seccion]['titulo'];
 }
+
+$productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
+
+
 ?>
 
 <!DOCTYPE html>

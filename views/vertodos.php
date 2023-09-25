@@ -1,26 +1,3 @@
-<?php
-
-$jsonData = file_get_contents('../datos/productos.json');
-
-$productosData = json_decode($jsonData, true);
-
-$productos = [];
-
-foreach ($productosData as $productoData) {
-    $producto = new Producto(
-        $productoData['id'],
-        $productoData['modelo'],
-        $productoData['color'],
-        $productoData['tipo'],
-        $productoData['capacidad'],
-        $productoData['imagen'],
-        $productoData['precio']
-    );
-    
-    $productos[] = $producto;
-}
-?>
-
 
 <div class="container">
     <h1>Todos los Productos</h1>
@@ -40,4 +17,5 @@ foreach ($productosData as $productoData) {
         <?php } ?>
     </div>
 </div>
+
 

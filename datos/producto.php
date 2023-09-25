@@ -54,6 +54,31 @@ class Producto
     {
         return $this->precio;
     }
+
+    //  cargar productos desde un archivo JSON
+    public static function cargarProductosDesdeJSON($rutaArchivo)
+    {
+        $productos = [];
+        $json = file_get_contents($rutaArchivo);
+        $data = json_decode($json, true);
+
+        if ($data) {
+            foreach ($data as $item) {
+                $producto = new Producto(
+                    $item['id'],
+                    $item['modelo'],
+                    $item['color'],
+                    $item['tipo'],
+                    $item['capacidad'],
+                    $item['imagen'],
+                    $item['precio']
+                );
+                $productos[] = $producto;
+            }
+        }
+
+        return $productos;
+    }
 }
 
 ?>
