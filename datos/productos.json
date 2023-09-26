@@ -45,92 +45,92 @@
     },
     {
         "id": 6,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"STANLEY",
+        "color": "Verde",
         "tipo": "Mates",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "236ml",
+        "imagen": "img/mate1.png",
+        "precio": 26000
     },
     {
         "id": 7,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"STANLEY EDICION LIMIT",
+        "color": "Negro",
         "tipo": "Mates",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "236ml",
+        "imagen": "img/mate2.png",
+        "precio": 26000
     },
     {
         "id": 8,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"STANLEY EDICION SCHOLAS",
+        "color": "Blanco",
         "tipo": "Mates",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "236ml",
+        "imagen": "img/mate3.png",
+        "precio": 26000
     },
     {
         "id": 9,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
-        "tipo": "Mates",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "modelo":"STANLEY CON TAPA",
+        "color": "Verde",
+        "tipo": "Vasos",
+        "capacidad": "473ml",
+        "imagen": "img/vaso1.webp",
+        "precio": 29000
     },
     {
         "id": 10,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"VASO PINTA STANLEY",
+        "color": "Negro",
         "tipo": "Vasos",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "473ml",
+        "imagen": "img/vaso2.png",
+        "precio": 21000
     },
     {
         "id": 11,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"VASO PINTA STANLEY C/DESTAPADOR",
+        "color": "Rosa",
         "tipo": "Vasos",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "473ml",
+        "imagen": "img/vaso3.png",
+        "precio": 29000
     },
     {
         "id": 12,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"VASO TERMICO STANLEY ONE HAND",
+        "color": "Verde",
         "tipo": "Vasos",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "473ml",
+        "imagen": "img/vaso4.png",
+        "precio": 34000
     },
     {
         "id": 13,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"TAZA STANLEY CAMP MUG",
+        "color": "Verde",
         "tipo": "Mugs",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "354ml",
+        "imagen": "img/mug1.webp",
+        "precio": 31500
     },
     {
         "id": 14,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"TAZA TERMICA MUG EDICION LIMITADA",
+        "color": "Azul",
         "tipo": "Mugs",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "354ml",
+        "imagen": "img/mug2.jpeg",
+        "precio": 35500
     },
     {
         "id": 15,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
         "tipo": "Mugs",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
     }
 ]
