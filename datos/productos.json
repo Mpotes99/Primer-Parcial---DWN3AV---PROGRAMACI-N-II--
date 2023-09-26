@@ -6,42 +6,42 @@
         "tipo": "Termo",
         "capacidad": "739ml",
         "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "precio": 45000
     },
     {
         "id": 2,
-        "modelo":"NICO",
-        "color": "Polar",
+        "modelo":"CLASICO",
+        "color": "Verde",
         "tipo": "Termo",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "1.4lts",
+        "imagen": "img/clasico.webp",
+        "precio": 40000
     },
     {
         "id": 3,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"SYSTEM",
+        "color": "Maple",
         "tipo": "Termo",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "1.2lts",
+        "imagen": "img/matesystem.webp",
+        "precio": 30000
     },
     {
         "id": 4,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"SYSTEM",
+        "color": "Negro",
         "tipo": "Termo",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "800ml",
+        "imagen": "img/matesystem2.webp",
+        "precio": 35000
     },    {
         "id": 5,
-        "modelo":"ADVENTURE",
-        "color": "Polar",
+        "modelo":"EDICION LIMIT",
+        "color": "Verde",
         "tipo": "Termo",
-        "capacidad": "739ml",
-        "imagen": "img/adventure739ml.webp",
-        "precio": 45.0000
+        "capacidad": "1.4lts",
+        "imagen": "img/edicionlimit.webp",
+        "precio": 37500
     },
     {
         "id": 6,
