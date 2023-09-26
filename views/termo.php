@@ -2,7 +2,7 @@
 <div class="container mt-5">
         <h1>Productos Termo</h1>
         <div class="row">
-            <?php foreach ($productosFiltrados as $producto) : ?>
+            <?php foreach ($productos as $producto) : ?>
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <img src="<?= $producto->getImagen() ?>" class="card-img-top" alt="<?= $producto->getModelo() ?>">
