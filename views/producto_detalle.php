@@ -5,7 +5,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
 
     // Leer el archivo JSON de productos
     $productosJSON = file_get_contents('datos/productos.json');
-    $productos = json_decode($productosJSON);
+    $productos = json_decode($productos_json, true);
 
     // Buscar el producto en el archivo JSON
     $productoDetalle = null;
