@@ -9,8 +9,9 @@ class Producto
     private $imagen;
     private $precio;
     private $descripcion;
+    private $comentarios;
 
-    public function __construct($id, $modelo, $color, $tipo, $capacidad, $imagen, $precio, $descripcion)
+    public function __construct($id, $modelo, $color, $tipo, $capacidad, $imagen, $precio, $descripcion, $comentarios)
     {
         $this->id = $id;
         $this->modelo = $modelo;
@@ -20,6 +21,7 @@ class Producto
         $this->imagen = $imagen;
         $this->precio = $precio;
         $this->descripcion = $descripcion;
+        $this->comentarios = $comentarios;
     }
 
     public function getId()
@@ -62,6 +64,12 @@ class Producto
         return $this->descripcion;
     }
 
+    public function getComentarios()
+    {
+        return $this->comentarios;
+    }
+
+
     //  cargar productos desde un archivo JSON
     public static function cargarProductosDesdeJSON($rutaArchivo)
     {
@@ -79,7 +87,8 @@ class Producto
                     $item['capacidad'],
                     $item['imagen'],
                     $item['precio'],
-                    $item['descripcion']
+                    $item['descripcion'],
+                    $item['comentarios']
                 );
                 $productos[] = $producto;
             }
