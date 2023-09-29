@@ -102,7 +102,7 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
     if (file_exists("views/$vista.php")) {
         require_once "views/$vista.php";
     } else {
-        // Manejar el caso en el que la vista no existe (por ejemplo, mostrar un mensaje de error o una vista predeterminada).
+        // Manejar el caso en el que la vista no existe 
         echo "La vista solicitada no existe.";
     }
     ?>

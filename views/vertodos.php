@@ -16,12 +16,12 @@
 
     <div class="row">
         <?php 
-        // Verificar si se ha enviado el formulario de filtro
+        // Verificar el formulario de filtro
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            // Obtener el valor seleccionado del filtro
+            // Obtener el valor
             $filtroTipo = $_POST['filtroTipo'];
 
-            // Filtrar los productos según el tipo seleccionado
+            // Filtrar los productos
             if ($filtroTipo !== 'Todos') {
                 $productos = array_filter($productos, function ($producto) use ($filtroTipo) {
                     return $producto->getTipo() === $filtroTipo;
