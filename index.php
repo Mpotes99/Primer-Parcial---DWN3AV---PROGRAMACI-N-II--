@@ -74,9 +74,9 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="index.php?sec=termo">Termos</a>
-            <a class="dropdown-item" href="#">Mates</a>
-            <a class="dropdown-item" href="#">Vasos</a>
-            <a class="dropdown-item" href="#">Mugs</a>
+            <a class="dropdown-item" href="index.php?sec=mates">Mates</a>
+            <a class="dropdown-item" href="index.php?sec=vasos">Vasos</a>
+            <a class="dropdown-item" href="index.php?sec=mugs">Mugs</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="index.php?sec=vertodos">Ver todos los productos</a>
           </div>

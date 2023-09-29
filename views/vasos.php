@@ -1,10 +1,10 @@
 <div class="container">
-    <h1>Todos los Termos</h1>
+    <h1>Todos los Vasos</h1>
     <div class="row">
         <?php 
-        // Bucle foreach para mostrar los termos
+        // Bucle foreach para mostrar los vasos
         foreach ($productos as $producto) {
-            if ($producto->getTipo() === 'Termo') { ?>
+            if ($producto->getTipo() === 'Vasos') { ?>
                 <div class="col-12 col-md-4 mb-4">
                     <div class="card">
                         <img src="<?= $producto->getImagen() ?>" class="card-img-top" alt="<?= $producto->getModelo() ?>">
