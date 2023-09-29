@@ -3,15 +3,25 @@
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $idProducto = $_GET['id'];
 
-    // Aquí, debes realizar una consulta a tu base de datos o donde sea que almacenes la información detallada del producto.
-    // Recupera la información del producto específico basado en el $idProducto.
-    // Supongamos que tienes un objeto $productoDetalle que contiene los detalles del producto.
+    // Leer el archivo JSON de productos
+    $productosJSON = file_get_contents('productos.json');
+    $productos = json_decode($productosJSON);
+
+    // Buscar el producto en el archivo JSON
+    $productoDetalle = null;
+    foreach ($productos as $producto) {
+        if ($producto->id == $idProducto) {
+            $productoDetalle = $producto;
+            break;
+        }
+    }
 
     // Verificar si se encontró el producto
     if ($productoDetalle) {
-        $modelo = $productoDetalle->getModelo();
-        $descripcion = $productoDetalle->getDescripcion();
-        $comentarios = $productoDetalle->getComentarios(); // Supongamos que esto es una lista de comentarios.
+        $modelo = $productoDetalle->modelo;
+        $descripcion = $productoDetalle->descripcion;
+        // Supongamos que tienes un campo 'comentarios' en tus datos JSON.
+        $comentarios = $productoDetalle->comentarios;
 
         // A continuación, puedes mostrar la información detallada del producto.
         ?>
@@ -44,7 +54,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         </html>
         <?php
     } else {
-        // Manejar el caso en el que el producto no se encontró en la base de datos.
+        // Manejar el caso en el que el producto no se encontró en el archivo JSON.
         echo "Producto no encontrado.";
     }
 } else {
