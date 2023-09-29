@@ -1,10 +1,10 @@
 <?php
 // Verificar si se ha proporcionado un ID de producto válido en la URL
-/*if (isset($_GET['id']) && is_numeric($_GET['id'])) {
+if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $idProducto = $_GET['id'];
 
     // Leer el archivo JSON de productos
-    $productosJSON = file_get_contents('productos.json');
+    $productosJSON = file_get_contents('datos/productos.json');
     $productos = json_decode($productosJSON);
 
     // Buscar el producto en el archivo JSON
@@ -21,10 +21,10 @@
         $modelo = $productoDetalle->modelo;
         $descripcion = $productoDetalle->descripcion;
         // Supongamos que tienes un campo 'comentarios' en tus datos JSON.
-        $comentarios = $productoDetalle->comentarios;*/
+        $comentarios = $productoDetalle->comentarios;
 
         // A continuación, puedes mostrar la información detallada del producto.
-        ?>*/ 
+        ?>
         <!DOCTYPE html>
         <html lang="es">
         <head>
