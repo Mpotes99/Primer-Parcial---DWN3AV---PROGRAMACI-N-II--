@@ -1,0 +1,151 @@
+[
+    {
+        "id": 1,
+        "modelo":"ADVENTURE",
+        "color": "Polar",
+        "tipo": "Termo",
+        "capacidad": "739ml",
+        "imagen": "img/adventure739ml.webp",
+        "precio": 45000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 2,
+        "modelo":"CLASICO",
+        "color": "Verde",
+        "tipo": "Termo",
+        "capacidad": "1.4lts",
+        "imagen": "img/clasico.webp",
+        "precio": 40000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 3,
+        "modelo":"SYSTEM",
+        "color": "Maple",
+        "tipo": "Termo",
+        "capacidad": "1.2lts",
+        "imagen": "img/matesystem.webp",
+        "precio": 30000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 4,
+        "modelo":"SYSTEM",
+        "color": "Negro",
+        "tipo": "Termo",
+        "capacidad": "800ml",
+        "imagen": "img/matesystem2.webp",
+        "precio": 35000,
+        "descripcion": "dasdsaasddsaasd"
+    },    {
+        "id": 5,
+        "modelo":"EDICION LIMIT",
+        "color": "Verde",
+        "tipo": "Termo",
+        "capacidad": "1.4lts",
+        "imagen": "img/edicionlimit.webp",
+        "precio": 37500,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 6,
+        "modelo":"STANLEY",
+        "color": "Verde",
+        "tipo": "Mates",
+        "capacidad": "236ml",
+        "imagen": "img/mate1.png",
+        "precio": 26000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 7,
+        "modelo":"STANLEY EDICION LIMIT",
+        "color": "Negro",
+        "tipo": "Mates",
+        "capacidad": "236ml",
+        "imagen": "img/mate2.png",
+        "precio": 26000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 8,
+        "modelo":"STANLEY EDICION SCHOLAS",
+        "color": "Blanco",
+        "tipo": "Mates",
+        "capacidad": "236ml",
+        "imagen": "img/mate3.png",
+        "precio": 26000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 9,
+        "modelo":"STANLEY CON TAPA",
+        "color": "Verde",
+        "tipo": "Vasos",
+        "capacidad": "473ml",
+        "imagen": "img/vaso1.webp",
+        "precio": 29000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 10,
+        "modelo":"VASO PINTA STANLEY",
+        "color": "Negro",
+        "tipo": "Vasos",
+        "capacidad": "473ml",
+        "imagen": "img/vaso2.png",
+        "precio": 21000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 11,
+        "modelo":"VASO PINTA STANLEY C/DESTAPADOR",
+        "color": "Rosa",
+        "tipo": "Vasos",
+        "capacidad": "473ml",
+        "imagen": "img/vaso3.png",
+        "precio": 29000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 12,
+        "modelo":"VASO TERMICO STANLEY ONE HAND",
+        "color": "Verde",
+        "tipo": "Vasos",
+        "capacidad": "473ml",
+        "imagen": "img/vaso4.png",
+        "precio": 34000,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 13,
+        "modelo":"TAZA STANLEY CAMP MUG",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug1.webp",
+        "precio": 31500,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 14,
+        "modelo":"TAZA TERMICA MUG EDICION LIMITADA",
+        "color": "Azul",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug2.jpeg",
+        "precio": 35500,
+        "descripcion": "dasdsaasddsaasd"
+    },
+    {
+        "id": 15,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500,
+        "descripcion": "dasdsaasddsaasd"
+    }
+]
