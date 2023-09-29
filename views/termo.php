@@ -15,6 +15,7 @@
                             <p class="card-text">Precio: $<?= number_format($producto->getPrecio(), 2) ?></p>
                             <!-- Agregar botón "Agregar al carrito" -->
                             <button class="btn btn-dark">Agregar al carrito</button>
+                            <a href="producto_detalle.php?id=<?= $producto->getId() ?>" class="btn btn-primary">Ver más</a>
                         </div>
                     </div>
                 </div>
