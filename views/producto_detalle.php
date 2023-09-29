@@ -1,6 +1,6 @@
+<?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-<?php
 // Verificar si se ha proporcionado un ID de producto válido en la URL
 if (isset($_GET['id']) && is_numeric($_GET['id'])) {
     $idProducto = $_GET['id'];
