@@ -1,118 +1,115 @@
-.logo{
-    max-width: 120px;
+.logo {
+  max-width: 120px;
 }
 
-.logo1{
-    max-width: 400px;
+.logo1 {
+  max-width: 400px;
 }
 .custom-alert {
-    background-color:#212121;
-    color: white;
-    text-align: center;
+  background-color: #212121;
+  color: white;
+  text-align: center;
 }
-
-
-
 
 .cover-banner {
-    position: relative;
-    height: 100vh;
-    background: url('../img/banner2.png') center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
-    color: #fff; 
-    text-align: center;
-    color: #fff;
+  position: relative;
+  height: 100vh;
+  background: url("../img/banner2.png") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  color: #fff;
 }
-.cover-banner2{
-    position: relative;
-    height: 50vh;
-    background: url('../img/contacto.png') center center no-repeat;
-    background-attachment: fixed;
-    background-size: cover; 
-    color: #3a3a3aa9; 
-    text-align: center;
-    color: #fff;
-    color: white;
+.cover-banner2 {
+  position: relative;
+  height: 50vh;
+  background: url("../img/contacto.png") center center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #3a3a3aa9;
+  text-align: center;
+  color: #fff;
+  color: white;
 }
 
 .cover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .custom-button {
-    width: auto; 
-    padding: 10px 20px;
+  width: auto;
+  padding: 10px 20px;
 }
 
-h1{
-    font-size: 4rem;
+h1 {
+  font-size: 4rem;
 }
-.custom1{
-    background-color: red;
+.custom1 {
+  background-color: red;
 }
 
 /* Envios */
 
 .envios {
-    position: relative;
-    background-image: url('../img/banner1.png'); 
-    background-attachment: fixed;
-    background-size: cover; 
-    height: 100vh; 
-    color: #fff; 
+  position: relative;
+  background-image: url("../img/banner1.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
 }
 .envios h1 {
-    text-align: center;
-    padding-top: 20px; 
+  text-align: center;
+  padding-top: 20px;
 }
-.contacto{
-    position: relative;
-    background-image: url('../img/contacto.png'); 
-    background-attachment: fixed;
-    background-size: cover; 
-    height: 100vh; 
-    color: #fff; 
-}
-
-.alumnos2{
-    position: relative;
-    background-image: url('../img/alumnosfondo.png'); 
-    background-size: cover; 
-    height: 100vh; 
-    color: #fff;
-}
-.alumnos{
-    margin-top: 30px;
+.contacto {
+  position: relative;
+  background-image: url("../img/contacto.png");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
 }
 
-.contacto1{
-    max-width: 70%;
-    background-color: #00000021;
-    padding: 10px;
-    border-radius: 10px;
+.alumnos2 {
+  position: relative;
+  background-image: url("../img/alumnosfondo.png");
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
 }
-.btn-info{
-    background-color: #51985F;
-    color: white;
-    border: #396341;
+.alumnos {
+  margin-top: 30px;
 }
-.btn-info:hover{
-    background-color:#396341;
-    color: white;
+
+.contacto1 {
+  max-width: 70%;
+  background-color: #00000021;
+  padding: 10px;
+  border-radius: 10px;
+}
+.btn-info {
+  background-color: #51985f;
+  color: white;
+  border: #396341;
+}
+.btn-info:hover {
+  background-color: #396341;
+  color: white;
 }
 
 .hola404 {
-    position: relative;
-    background-image: url('../img/404.png');
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  background-image: url("../img/404.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
