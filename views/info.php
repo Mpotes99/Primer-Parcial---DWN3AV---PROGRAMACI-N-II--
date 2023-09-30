@@ -29,11 +29,11 @@ if (isset($_GET['id'])) {
                 </div>
                     <div class="col-md-6">
                         <div class="card-body">
-                            <h5 class="card-title"><?= $modelo ?></h5>
-                            <p class="card-text">Tipo: <?= $tipo ?></p>
-                            <p class="card-text">Capacidad: <?= $capacidad ?></p>
-                            <p class="card-text" text-success>Precio: $<?= number_format($precio, 2) ?></p>
-                            <a href="#" class="btn btn-success">Comprar</a>
+                            <h5 class="card-title display-4"><?= $modelo ?></h5>
+                            <p class="card-text h3">Tipo: <?= $tipo ?></p>
+                            <p class="card-text h3">Capacidad: <?= $capacidad ?></p>
+                            <p class="card-text" text-success h3>Precio: $<?= number_format($precio, 2) ?></p>
+                            <a href="#" class="btn btn-success btn-lg">Comprar</a>
                         </div>    
                     </div>    
             </div>
