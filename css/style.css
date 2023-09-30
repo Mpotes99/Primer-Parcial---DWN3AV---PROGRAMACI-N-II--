@@ -17,7 +17,7 @@
 .cover-banner {
     position: relative;
     height: 100vh;
-    background: url('../img/bannerhome.png') center center no-repeat;
+    background: url('../img/banner2.png') center center no-repeat;
     background-attachment: fixed;
     background-size: cover; 
     height: 100vh; 
@@ -47,6 +47,8 @@ h1{
 /* Envios */
 
 .envios {
+    position: relative;
+    
     background-image: url('../img/banner1.png'); 
     background-attachment: fixed;
     background-size: cover; 
