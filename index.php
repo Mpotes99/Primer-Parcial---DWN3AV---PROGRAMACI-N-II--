@@ -29,7 +29,10 @@ $secciones_validas = [
     ],
     "faqs" => [
       "titulo" => "Preguntas Frecuentes"
-    ]
+    ],
+    "info" => [
+      "titulo" => "Detalle de Producto"
+  ]
 ];
 
 $seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
@@ -41,6 +44,8 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     $vista = $seccion;
     $titulo = $secciones_validas[$seccion]['titulo'];
 }
+
+
 
 $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
 
@@ -102,11 +107,32 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
     if (file_exists("views/$vista.php")) {
         require_once "views/$vista.php";
     } else {
-        // Manejar el caso en el que la vista no existe 
         echo "La vista solicitada no existe.";
     }
     ?>
 </main>
+
+<!-- Modal para mostrar información detallada del producto -->
+<div class="modal fade" id="productoModal" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productoModalLabel">Detalles del Producto</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Aquí mostrarás la información detallada del producto -->
+                <h5 id="productoModelo"></h5>
+                <p id="productoTipo"></p>
+                <p id="productoCapacidad"></p>
+                <p id="productoPrecio"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <footer class="bg-dark text-white py-4">
     <div class="container">
