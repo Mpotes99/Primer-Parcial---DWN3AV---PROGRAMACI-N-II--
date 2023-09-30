@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="container text-center mt-5">
-        <img src="img/404.png" alt="Error 404" width="400">
+        <img src="img/404.png" alt="Error 404" width="1000">
         <h1>Error 404: Página no encontrada</h1>
         <p>Lo sentimos, la página que buscas no existe o ha sido movida.</p>
-        <a href="index.php" class="btn btn-primary">Volver al inicio</a>
+        <a href="index.php" class="btn btn-outline-primary btn-lg">Volver al inicio</a>
     </div>
 </body>
 </html>
