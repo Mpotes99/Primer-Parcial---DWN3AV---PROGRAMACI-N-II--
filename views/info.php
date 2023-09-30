@@ -24,13 +24,13 @@ if (isset($_GET['id'])) {
 
             <div class="container">
                 <h1>Detalle del Producto</h1>
-                <div class="card">
+                <div class="card-columns">
                     <img src="<?= $imagen ?>" class="card-img-top" alt="<?= $modelo ?>">
                     <div class="card-body">
                         <h5 class="card-title"><?= $modelo ?></h5>
                         <p class="card-text">Tipo: <?= $tipo ?></p>
                         <p class="card-text">Capacidad: <?= $capacidad ?></p>
-                        <p class="card-text">Precio: $<?= number_format($precio, 2) ?></p>
+                        <p class="card-text" text-success>Precio: $<?= number_format($precio, 2) ?></p>
                         <a href="#" class="btn btn-primary">Comprar</a>
                     </div>
                 </div>
