@@ -143,10 +143,10 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
             <div class="col-md-6">
                 <h5>ACERCA DE STANLEY</h5>
                 <ul class="list-unstyled">
-                    <li><a href="#">¿Quiénes somos?</a></li>
-                    <li><a href="#">Puntos Oficiales</a></li>
-                    <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="index.php?sec=quienes somos">¿Quiénes somos?</a></li>
+                    <li><a href="index.php?sec=puntos">Puntos Oficiales</a></li>
+                    <li><a href="index.php?sec=qa"">Preguntas frecuentes</a></li>
+                    <li><a href="index.php?sec=terminos">Términos y condiciones</a></li>
                 </ul>
             </div>
         </div>
