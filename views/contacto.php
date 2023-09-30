@@ -1,14 +1,16 @@
 <div class="container mt-5">
-    <h1 class="text-center">Ponete en contacto</h1>
+    <h1 class="text-center">¡Déjanos tu mensaje!</h1>
     <img src="img/banner3.webp" alt="banner contacto" class="img-fluid mt-3 mb-4">
-    <form action="datos_post.php" method="POST">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" required>
-        </div>
-        <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido:</label>
-            <input type="text" class="form-control" name="apellido" id="apellido" required>
+    <form action="datos_post.php" method="POST" class="contacto1">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" name="nombre" id="nombre" required>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" name="apellido" id="apellido" required>
+            </div>
         </div>
         <div class="mb-3">
             <label for="correo" class="form-label">Email:</label>

@@ -9,7 +9,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
     <section id="home" class="py-5">
     <div class="container">

@@ -20,10 +20,20 @@
     background: url('../img/banner2.png') center center no-repeat;
     background-attachment: fixed;
     background-size: cover; 
-    height: 100vh; 
     color: #fff; 
     text-align: center;
     color: #fff;
+}
+.cover-banner2{
+    position: relative;
+    height: 50vh;
+    background: url('../img/contacto.png') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    color: #3a3a3aa9; 
+    text-align: center;
+    color: #fff;
+    color: white;
 }
 
 .cover-text {
@@ -48,7 +58,6 @@ h1{
 
 .envios {
     position: relative;
-    
     background-image: url('../img/banner1.png'); 
     background-attachment: fixed;
     background-size: cover; 
@@ -58,4 +67,52 @@ h1{
 .envios h1 {
     text-align: center;
     padding-top: 20px; 
+}
+.contacto{
+    position: relative;
+    background-image: url('../img/contacto.png'); 
+    background-attachment: fixed;
+    background-size: cover; 
+    height: 100vh; 
+    color: #fff; 
+}
+
+.alumnos2{
+    position: relative;
+    background-image: url('../img/alumnosfondo.png'); 
+    background-size: cover; 
+    height: 100vh; 
+    color: #fff;
+}
+.alumnos{
+    margin-top: 30px;
+}
+
+.contacto1{
+    max-width: 70%;
+    background-color: #00000021;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-info{
+    background-color: #51985F;
+    color: white;
+    border: #396341;
+}
+.btn-info:hover{
+    background-color:#396341;
+    color: white;
+}
+
+.hola404 {
+    position: relative;
+    background-image: url('../img/404.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -32,7 +32,10 @@ $secciones_validas = [
     ],
     "info" => [
       "titulo" => "Detalle de Producto"
-  ]
+    ],
+    "alumnos" => [
+        "titulo" => "Alumnos"
+      ]
 ];
 
 $seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
@@ -62,6 +65,10 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
 </head>
 <body>
 
@@ -95,6 +102,9 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=contacto">Contacto</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php?sec=alumnos">Alumnos</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -112,26 +122,7 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
     ?>
 </main>
 
-<!-- Modal para mostrar información detallada del producto -->
-<div class="modal fade" id="productoModal" tabindex="-1" role="dialog" aria-labelledby="productoModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="productoModalLabel">Detalles del Producto</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <!-- Aquí mostrarás la información detallada del producto -->
-                <h5 id="productoModelo"></h5>
-                <p id="productoTipo"></p>
-                <p id="productoCapacidad"></p>
-                <p id="productoPrecio"></p>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 <footer class="bg-dark text-white py-4">
@@ -140,9 +131,9 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
             <div class="col-md-6">
                 <img src="img/logofooter.svg" alt="Logo de Stanley" width="300">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-4">
                 <h5>ACERCA DE STANLEY</h5>
-                <ul class="list-unstyled">
+                <ul class="list">
                     <li><a href="index.php?sec=quienes somos">¿Quiénes somos?</a></li>
                     <li><a href="index.php?sec=puntos">Puntos Oficiales</a></li>
                     <li><a href="index.php?sec=qa"">Preguntas frecuentes</a></li>
@@ -151,13 +142,6 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-md-6">
-                <h5>Datos del alumno/s</h5>
-                <ul class="list-unstyled">
-                    <li>Mauricio Potes</li>
-                    <li>Nicolás Guaragna</li>
-                </ul>
-            </div>
             <div class="col-md-6">
                 <h5>INFORMACIÓN DE CONTACTO</h5>
                 <address>

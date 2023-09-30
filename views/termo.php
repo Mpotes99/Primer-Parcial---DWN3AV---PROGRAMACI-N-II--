@@ -13,7 +13,6 @@
                             <p class="card-text">Tipo: <?= $producto->getTipo() ?></p>
                             <p class="card-text">Capacidad: <?= $producto->getCapacidad() ?></p>
                             <p class="card-text">Precio: $<?= number_format($producto->getPrecio(), 2) ?></p>
-                            <!-- Agregar botón "Agregar al carrito" -->
                             <button class="btn btn-dark">Agregar al carrito</button>
                             <a href="index.php?sec=info&id=<?= $producto->getId() ?>" class="btn btn-info">Ver más</a>
                         </div>

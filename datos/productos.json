@@ -6,9 +6,7 @@
         "tipo": "Termo",
         "capacidad": "739ml",
         "imagen": "img/adventure739ml.webp",
-        "precio": 45000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 45000
     },
     {
         "id": 2,
@@ -17,9 +15,7 @@
         "tipo": "Termo",
         "capacidad": "1.4lts",
         "imagen": "img/clasico.webp",
-        "precio": 40000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 40000
     },
     {
         "id": 3,
@@ -28,9 +24,7 @@
         "tipo": "Termo",
         "capacidad": "1.2lts",
         "imagen": "img/matesystem.webp",
-        "precio": 30000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 30000
     },
     {
         "id": 4,
@@ -39,9 +33,7 @@
         "tipo": "Termo",
         "capacidad": "800ml",
         "imagen": "img/matesystem2.webp",
-        "precio": 35000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 35000
     },    
     {
         "id": 5,
@@ -50,9 +42,7 @@
         "tipo": "Termo",
         "capacidad": "1.4lts",
         "imagen": "img/edicionlimit.webp",
-        "precio": 37500,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 37500
     },
     {
         "id": 6,
@@ -61,9 +51,7 @@
         "tipo": "Mates",
         "capacidad": "236ml",
         "imagen": "img/mate1.png",
-        "precio": 26000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 26000
     },
     {
         "id": 7,
@@ -72,9 +60,7 @@
         "tipo": "Mates",
         "capacidad": "236ml",
         "imagen": "img/mate2.png",
-        "precio": 26000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 26000
     },
     {
         "id": 8,
@@ -83,9 +69,7 @@
         "tipo": "Mates",
         "capacidad": "236ml",
         "imagen": "img/mate3.png",
-        "precio": 26000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 26000
     },
     {
         "id": 9,
@@ -94,9 +78,7 @@
         "tipo": "Vasos",
         "capacidad": "473ml",
         "imagen": "img/vaso1.webp",
-        "precio": 29000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 29000
     },
     {
         "id": 10,
@@ -105,9 +87,7 @@
         "tipo": "Vasos",
         "capacidad": "473ml",
         "imagen": "img/vaso2.png",
-        "precio": 21000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 21000
     },
     {
         "id": 11,
@@ -116,9 +96,7 @@
         "tipo": "Vasos",
         "capacidad": "473ml",
         "imagen": "img/vaso3.png",
-        "precio": 29000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 29000
     },
     {
         "id": 12,
@@ -127,9 +105,7 @@
         "tipo": "Vasos",
         "capacidad": "473ml",
         "imagen": "img/vaso4.png",
-        "precio": 34000,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 34000
     },
     {
         "id": 13,
@@ -138,9 +114,7 @@
         "tipo": "Mugs",
         "capacidad": "354ml",
         "imagen": "img/mug1.webp",
-        "precio": 31500,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 31500
     },
     {
         "id": 14,
@@ -149,9 +123,7 @@
         "tipo": "Mugs",
         "capacidad": "354ml",
         "imagen": "img/mug2.jpeg",
-        "precio": 35500,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 35500
     },
     {
         "id": 15,
@@ -160,8 +132,6 @@
         "tipo": "Mugs",
         "capacidad": "354ml",
         "imagen": "img/mug3.png",
-        "precio": 35500,
-        "descripcion": "dasdsaasddsaasd",
-        "comentarios": "rqweqweqweqws"
+        "precio": 35500
     }
 ]
