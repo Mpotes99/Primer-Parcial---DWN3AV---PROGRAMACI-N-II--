@@ -29,7 +29,7 @@ $secciones_validas = [
     ],
     "faqs" => [
       "titulo" => "Preguntas Frecuentes"
-  ]
+    ]
 ];
 
 $seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
