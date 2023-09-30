@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.errormobile{
+  display: none;
+}
+
 .cover-banner {
   position: relative;
   height: 100vh;
@@ -84,10 +88,15 @@ h1 {
 .alumnos {
   margin-top: 30px;
 }
+.nomostrar{
+  display: none;
+}
 
 .contacto1 {
-  max-width: 70%;
-  background-color: #00000021;
+  margin-left: 100px;
+  margin-right: 100px;
+  max-width: 100%;
+  background-color: #0000000c;
   padding: 10px;
   border-radius: 10px;
 }
@@ -112,4 +121,59 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.nube{
+  position: static;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nomostrar{
+    display: block;
+  }
+  h1{
+      font-size:28px; 
+  }
+  .logo1{
+    max-width: 200px;
+  }
+  .envios{
+    display: none;
+  }
+  .contacto1{
+    margin: 0;
+  }
+  .alumno2{
+    position: absolute;
+    background-image: url("../img/alumnosfondo.png");
+    color: #fff;
+    height: 100vh;
+    
+  }
+  .custom-button{
+    margin: 0;
+  }
+  .errormobile{
+    height: 50vh;
+    background: url("../img/contacto.png") center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .clouds{
+    display: none;
+  }
+  .errorr{
+    color: #396341;
+    font-weight: 900;
+  }
+  .error1{
+    font-size: 3rem;
+    font-weight: 300;
+  }
 }

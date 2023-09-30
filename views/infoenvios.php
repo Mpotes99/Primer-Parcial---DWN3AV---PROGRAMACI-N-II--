@@ -1,6 +1,5 @@
 <div class="envios">
     <div class="hola">
-        <h1 class="text-center">Políticas de Envíos</h1>
     </div>
 </div>
 <div class="container">
