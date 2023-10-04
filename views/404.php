@@ -1,9 +1,7 @@
 
 <div class="clouds">
     <div class="hola404">
-        <img src="img/nubes.png" alt="" class="nube">
         <div class="container text-center mt-5">
-            
             <br>
             <br>
             <br>
