@@ -133,7 +133,7 @@
         "capacidad": "354ml",
         "imagen": "img/mug3.png",
         "precio": 35500
-    }
+    },
     {
         "id": 16,
         "modelo":"CLASICO",
@@ -142,7 +142,7 @@
         "capacidad": "2.3lts",
         "imagen": "img/verde.png",
         "precio": 102000
-    }
+    },
     {
         "id": 17,
         "modelo":"VASO STANLEY C/TAPA Y DESTAPADOR",
@@ -151,7 +151,7 @@
         "capacidad": "473ml",
         "imagen": "img/vaso5.png",
         "precio": 44000
-    }
+    },
     {
         "id": 18,
         "modelo":"CHOP STANLEY",
@@ -160,7 +160,7 @@
         "capacidad": "709ml",
         "imagen": "img/vaso6.png",
         "precio": 43000
-    }
+    },
     {
         "id": 19,
         "modelo":"VASO STANLEY QUENCHER",
@@ -169,7 +169,7 @@
         "capacidad": "1.18lts",
         "imagen": "img/vaso7.png",
         "precio": 74000
-    }
+    },
     {
         "id": 20,
         "modelo":"CLASICO",
@@ -178,7 +178,7 @@
         "capacidad": "1.4lts",
         "imagen": "img/termo5.webp",
         "precio": 111000
-    }
+    },
     {
         "id": 21,
         "modelo":"STANLEY MASTER SERIES",
