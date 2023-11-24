@@ -2,31 +2,40 @@
 if (isset($_GET['id'])) {
     $producto_id = $_GET['id'];
 
-    $productos = json_decode(file_get_contents('datos/productos.json'), true);
+    // Detalles de conexión a la base de datos
+    $servername = "localhost";
+    $username = "root";
+    $password = ""; // Deja esto vacío si no hay contraseña
+    $dbname = "stanley_datos";
 
-    $producto = null;
-    foreach ($productos as $p) {
-        if ($p['id'] == $producto_id) {
-            $producto = $p;
-            break;
-        }
+    // Crear la conexión
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Verificar la conexión
+    if ($conn->connect_error) {
+        die("Error de conexión: " . $conn->connect_error);
     }
 
-    if ($producto) {
-        $modelo = $producto['modelo'];
-        $tipo = $producto['tipo'];
-        $capacidad = $producto['capacidad'];
-        $precio = $producto['precio'];
-        $imagen = $producto['imagen'];
+    $sql = "SELECT * FROM productos WHERE id = $producto_id";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+
+        $modelo = $row['modelo'];
+        $tipo = $row['tipo'];
+        $capacidad = $row['capacidad'];
+        $precio = $row['precio'];
+        $imagen = $row['imagen'];
 
         ?>
 
-    <div class="container">
-        <div class="card">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="<?= $imagen ?>" class="card-img-top img-fluid" alt="<?= $modelo ?>">
-                </div>
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="<?= $imagen ?>" class="card-img-top img-fluid" alt="<?= $modelo ?>">
+                    </div>
                     <div class="col-md-6">
                         <div class="card-body">
                             <h5 class="card-title display-4"><?= $modelo ?></h5>
@@ -37,14 +46,17 @@ if (isset($_GET['id'])) {
                             <a href="#" class="btn btn-success btn-lg">Comprar</a>
                         </div>    
                     </div>    
+                </div>
             </div>
         </div>
-    </div>
 
         <?php
     } else {
         echo "Producto no encontrado.";
     }
+
+    // Cierra la conexión a la base de datos
+    $conn->close();
 } else {
     echo "ID de producto no especificado.";
 }
