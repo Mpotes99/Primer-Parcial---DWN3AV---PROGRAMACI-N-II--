@@ -134,4 +134,58 @@
         "imagen": "img/mug3.png",
         "precio": 35500
     }
+    {
+        "id": 16,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
+    {
+        "id": 17,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
+    {
+        "id": 18,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
+    {
+        "id": 19,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
+    {
+        "id": 20,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
+    {
+        "id": 21,
+        "modelo":"TAZA MUG EDICION LIMITADA",
+        "color": "Verde",
+        "tipo": "Mugs",
+        "capacidad": "354ml",
+        "imagen": "img/mug3.png",
+        "precio": 35500
+    }
 ]
