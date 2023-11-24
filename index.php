@@ -1,9 +1,19 @@
 <?php
+
+// Iniciar la sesión
+session_start();
+
+// Verificar si la variable de sesión del carrito no está definida y definirla
+if (!isset($_SESSION['carrito'])) {
+    $_SESSION['carrito'] = [];
+}
+
+
 // Detalles de conexión a la base de datos
 $servername = "localhost";
 $username = "root";
 $password = ""; // Deja esto vacío si no hay contraseña
-$dbname = "stanley_datos";
+$dbname = "datos_stanley";
 
 // Crear la conexión
 $conn = new mysqli($servername, $username, $password, $dbname);

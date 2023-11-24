@@ -6,7 +6,7 @@ if (isset($_GET['id'])) {
     $servername = "localhost";
     $username = "root";
     $password = ""; // Deja esto vacío si no hay contraseña
-    $dbname = "stanley_datos";
+    $dbname = "datos_stanley";
 
     // Crear la conexión
     $conn = new mysqli($servername, $username, $password, $dbname);
