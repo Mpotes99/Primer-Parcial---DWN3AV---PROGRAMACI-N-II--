@@ -1,4 +1,6 @@
 <?PHP
+session_start();
+
 require_once "./datos/producto.php";
 
 $secciones_validas = [
@@ -55,6 +57,9 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
 
 ?>
 
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -66,9 +71,8 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
+    <script src="carrito.js"></script>
 </head>
 <body>
 
@@ -105,6 +109,11 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=alumnos">Alumnos</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#carritoModal">
+                <i class="fas fa-shopping-cart"></i> Carrito
+            </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -124,6 +133,24 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
 
 
 
+<div class="modal fade" id="carritoModal" tabindex="-1" aria-labelledby="carritoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="carritoModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <?php
+                ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Realizar Pedido</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer class="bg-dark text-white py-4">
     <div class="container">
@@ -151,7 +178,6 @@ $productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
         </div>
     </div>
 </footer>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
