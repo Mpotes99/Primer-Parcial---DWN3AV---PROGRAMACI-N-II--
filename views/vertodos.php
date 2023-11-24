@@ -10,6 +10,17 @@
             <option value="Vasos">Vasos</option>
             <option value="Mugs">Mugs</option>
         </select>
+        <label for="filtroColor">Filtrar por color:</label>
+    <select name="filtroColor" id="filtroColor">
+        <option value="Todos">Todos</option>
+        <option value="Blanco">Blanco</option>
+        <option value="Verde">Verde</option>
+        <option value="Marrón">Marrón</option>
+        <option value="Negro">Negro</option>
+        <option value="Rosa">Rosa</option>
+        <option value="Azul">Azul</option>
+        <option value="Violeta">Violeta</option>
+    </select>
         <button type="submit" class="btn btn-primary">Filtrar</button>
     </form>
 
@@ -20,6 +31,14 @@
             if ($filtroTipo !== 'Todos') {
                 $productos = array_filter($productos, function ($producto) use ($filtroTipo) {
                     return $producto->getTipo() === $filtroTipo;
+                });
+            }
+        }
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $filtroColor = $_POST['filtroColor'];
+            if ($filtroColor !== 'Todos') {
+                $productos = array_filter($productos, function ($producto) use ($filtroColor) {
+                    return $producto->getColor() === $filtroColor;
                 });
             }
         }
@@ -39,5 +58,6 @@
                 </div>
             </div>
         <?php } ?>
+        
     </div>
 </div>

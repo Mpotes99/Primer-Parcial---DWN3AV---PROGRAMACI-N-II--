@@ -44,3 +44,23 @@
         </div>
     </div>
 </section>
+<section id="empresa" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mb-4">Conocé a Stanley</h2>
+                <p class="text-center">Stanley es una empresa líder en la fabricación de termos de alta calidad. Desde su fundación, hemos estado comprometidos con la excelencia en diseño, durabilidad y la entrega de productos innovadores para satisfacer las necesidades de nuestros clientes.</p>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h3>Nuestra Historia</h3>
+                <p>Con más de X años de experiencia en la industria, Stanley ha construido una reputación sólida basada en la confianza de nuestros clientes y la calidad inigualable de nuestros productos.</p>
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestra Misión</h3>
+                <p>Nuestra misión es proporcionar productos que no solo cumplan con las expectativas de nuestros clientes en términos de diseño y rendimiento, sino que también superen esas expectativas. Estamos dedicados a la innovación constante y a la mejora continua.</p>
+            </div>
+        </div>
+    </div>
+</section>

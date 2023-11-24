@@ -18,6 +18,7 @@ class Producto
         $this->capacidad = $capacidad;
         $this->imagen = $imagen;
         $this->precio = $precio;
+
     }
 
     public function getId()
@@ -55,6 +56,7 @@ class Producto
         return $this->precio;
     }
 
+    
 
 
     //  cargar productos desde un archivo JSON
@@ -73,7 +75,7 @@ class Producto
                     $item['tipo'],
                     $item['capacidad'],
                     $item['imagen'],
-                    $item['precio']
+                    $item['precio'],
                 );
                 $productos[] = $producto;
             }

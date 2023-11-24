@@ -33,6 +33,7 @@ if (isset($_GET['id'])) {
                             <p class="card-text h3">Tipo: <?= $tipo ?></p>
                             <p class="card-text h3">Capacidad: <?= $capacidad ?></p>
                             <p class="card-text" text-success h3>Precio: $<?= number_format($precio, 2) ?></p>
+                            <p class="card-text">Descripción:<?= $capacidad ?> </p>
                             <a href="#" class="btn btn-success btn-lg">Comprar</a>
                         </div>    
                     </div>    

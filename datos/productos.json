@@ -2,7 +2,7 @@
     {
         "id": 1,
         "modelo":"ADVENTURE",
-        "color": "Polar",
+        "color": "Blanco",
         "tipo": "Termo",
         "capacidad": "739ml",
         "imagen": "img/adventure739ml.webp",
@@ -20,7 +20,7 @@
     {
         "id": 3,
         "modelo":"SYSTEM",
-        "color": "Maple",
+        "color": "Marrón",
         "tipo": "Termo",
         "capacidad": "1.2lts",
         "imagen": "img/matesystem.webp",
@@ -146,7 +146,7 @@
     {
         "id": 17,
         "modelo":"VASO STANLEY C/TAPA Y DESTAPADOR",
-        "color": "WINE",
+        "color": "Violeta",
         "tipo": "Vasos",
         "capacidad": "473ml",
         "imagen": "img/vaso5.png",
@@ -173,7 +173,7 @@
     {
         "id": 20,
         "modelo":"CLASICO",
-        "color": "Camuflado",
+        "color": "Marrón",
         "tipo": "Termo",
         "capacidad": "1.4lts",
         "imagen": "img/termo5.webp",
