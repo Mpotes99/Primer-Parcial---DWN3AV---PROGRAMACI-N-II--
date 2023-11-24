@@ -18,7 +18,6 @@ class Producto
         $this->capacidad = $capacidad;
         $this->imagen = $imagen;
         $this->precio = $precio;
-
     }
 
     public function getId()
@@ -56,26 +55,24 @@ class Producto
         return $this->precio;
     }
 
-    
-
-
-    //  cargar productos desde un archivo JSON
-    public static function cargarProductosDesdeJSON($rutaArchivo)
+    // Cargar productos desde la base de datos
+    public static function cargarProductosDesdeBD($conn)
     {
         $productos = [];
-        $json = file_get_contents($rutaArchivo);
-        $data = json_decode($json, true);
 
-        if ($data) {
-            foreach ($data as $item) {
+        $sql = "SELECT * FROM productos";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
                 $producto = new Producto(
-                    $item['id'],
-                    $item['modelo'],
-                    $item['color'],
-                    $item['tipo'],
-                    $item['capacidad'],
-                    $item['imagen'],
-                    $item['precio'],
+                    $row['id'],
+                    $row['modelo'],
+                    $row['color'],
+                    $row['tipo'],
+                    $row['capacidad'],
+                    $row['imagen'],
+                    $row['precio']
                 );
                 $productos[] = $producto;
             }
@@ -84,5 +81,4 @@ class Producto
         return $productos;
     }
 }
-
 ?>

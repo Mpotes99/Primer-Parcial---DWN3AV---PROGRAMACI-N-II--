@@ -1,7 +1,24 @@
-<?PHP
-session_start();
+<?php
+// Detalles de conexión a la base de datos
+$servername = "localhost";
+$username = "root";
+$password = ""; // Deja esto vacío si no hay contraseña
+$dbname = "stanley_datos";
 
+// Crear la conexión
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+}
+
+// Cargar productos desde la base de datos
 require_once "./datos/producto.php";
+$productos = Producto::cargarProductosDesdeBD($conn);
+
+// Cierra la conexión a la base de datos
+$conn->close();
 
 $secciones_validas = [
     "home" => [
@@ -10,7 +27,6 @@ $secciones_validas = [
     "vertodos" => [
         "titulo" => "Ver todos"
     ],
-
     "termo" => [
         "titulo" => "Termos"
     ],
@@ -24,20 +40,20 @@ $secciones_validas = [
         "titulo" => "Mugs"
     ],
     "contacto" => [
-      "titulo" => "Contacto"
+        "titulo" => "Contacto"
     ],
     "infoenvios" => [
-      "titulo" => "Info Envíos"
+        "titulo" => "Info Envíos"
     ],
     "faqs" => [
-      "titulo" => "Preguntas Frecuentes"
+        "titulo" => "Preguntas Frecuentes"
     ],
     "info" => [
-      "titulo" => "Detalle de Producto"
+        "titulo" => "Detalle de Producto"
     ],
     "alumnos" => [
         "titulo" => "Alumnos"
-      ]
+    ]
 ];
 
 $seccion = isset($_GET['sec']) ? $_GET['sec'] : 'home';
@@ -49,13 +65,6 @@ if (!array_key_exists($seccion, $secciones_validas)) {
     $vista = $seccion;
     $titulo = $secciones_validas[$seccion]['titulo'];
 }
-
-
-
-$productos = Producto::cargarProductosDesdeJSON('./datos/productos.json');
-
-
-?>
 
 ?>
 
