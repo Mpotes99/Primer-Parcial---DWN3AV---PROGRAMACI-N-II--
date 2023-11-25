@@ -1,6 +1,17 @@
-<?php
+<?PHP
+require_once "classes/Conexion.php";
+require_once "classes/Usuario.php";
 
-// Iniciar la sesión
+$conexion = (new Conexion())->getConexion();
+
+$query = "SELECT * FROM usuarios";
+
+$PDOStatement = $conexion->prepare($query);
+$PDOStatement->setFetchMode(PDO::FETCH_CLASS, 'Usuario');
+$PDOStatement->execute();
+
+$usuarios = $PDOStatement->fetchAll();
+
 session_start();
 
 // Verificar si la variable de sesión del carrito no está definida y definirla
@@ -49,6 +60,9 @@ $secciones_validas = [
     "mugs" => [
         "titulo" => "Mugs"
     ],
+    "catalogo_completo" => [
+        "titulo" => "Nuestro catalogo completo"
+    ],
     "contacto" => [
         "titulo" => "Contacto"
     ],
@@ -78,7 +92,7 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 
 ?>
 
-
+/*
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -118,6 +132,9 @@ if (!array_key_exists($seccion, $secciones_validas)) {
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=faqs">FAQ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" href="index.php?sec=catalogo_completo">Catalogo Completo</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="index.php?sec=infoenvios">Info Envíos</a>
@@ -201,4 +218,4 @@ if (!array_key_exists($seccion, $secciones_validas)) {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>*/
